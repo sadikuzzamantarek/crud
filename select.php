@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Registration</title>
 </head>
 
 <body>
-    <section>
+    <section class="select">
         <div class="container">
             <div class="py-5">
             <table class="table table-dark">
@@ -48,8 +49,8 @@ $result = mysqli_fetch_assoc($query)
                         <td><?php echo $result['email']  ?></td>
                         <td><?php echo $result['refer']  ?></td>
                         <td><?php echo $result['lang']  ?></td>
-                        <td><a href="#">DELETE</a></td>
-                        <td><a href="#">UPDATE</a></td>
+                        <td><a href="#"><i class="fas fa-edit text-light"></i></a></td>
+                        <td><a href="#"><i class="fas fa-trash-alt text-light"></i></a></td>
 
                     </tr>
                     <?php
