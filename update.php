@@ -46,9 +46,9 @@ include 'conn.php';
                 $refer =mysqli_real_escape_string($conn, $_POST['refer']);
                 $lang =mysqli_real_escape_string($conn, $_POST['lang']);
 
-                $insert = "INSERT INTO registration(name,email,phone,degree,refer,lang) values('$name','$email', '$phone','$degree','$refer','$lang')";
+                $update = "UPDATE registration SET `id` = $id, `name` = '$name', `email` = '$email', `phone` = '$phone', `degree` = '$degree', `refer` = '$refer', `lang` = '$lang' WHERE id = $id";
 
-                $query = mysqli_query($conn,$insert);
+                $query = mysqli_query($conn,$update) or die('Query Failed;');
 
                 if($query){
                     ?>
@@ -63,7 +63,7 @@ include 'conn.php';
                     </script>
                     <?php
                 }
-                header("https://google.com");
+                // header("https://google.com");
 
             }
 

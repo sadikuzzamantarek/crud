@@ -33,7 +33,7 @@ include 'conn.php';
                            
                             <input type="text" name="name" id="" class="form-control mr-2" placeholder="Enter your name" required>
                            
-                            <input type="text" class="form-control" name="qualifiaction" placeholder="Your qualification" name="degree" required>
+                            <input type="text" class="form-control" placeholder="Your qualification" name="degree" required>
                         </div>
 
                         <div class="form-group d-flex flex-row justify-content-between">
