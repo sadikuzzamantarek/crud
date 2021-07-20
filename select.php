@@ -50,7 +50,7 @@ $result = mysqli_fetch_assoc($query)
                         <td><?php echo $result['refer']  ?></td>
                         <td><?php echo $result['lang']  ?></td>
                         <td><a href="update.php?id=<?php echo $result['id']  ?>"><i class="fas fa-edit text-light"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt text-light"></i></a></td>
+                        <td><a href="delete.php?id=<?php echo $result['id']  ?>"><i class="fas fa-trash-alt text-light"></i></a></td>
 
                     </tr>
                     <?php

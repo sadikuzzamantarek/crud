@@ -77,6 +77,8 @@ if(isset($_POST['submit'])){
             alert('Registration Successful');
         </script>
         <?php
+    header('location: index.php');
+
     }else{
         ?>
         <script>
@@ -84,7 +86,6 @@ if(isset($_POST['submit'])){
         </script>
         <?php
     }
-    header("https://google.com");
 
 }
 

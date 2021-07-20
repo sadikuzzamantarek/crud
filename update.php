@@ -56,6 +56,7 @@ include 'conn.php';
                         alert('Update Successful');
                     </script>
                     <?php
+                    header('location: select.php');
                 }else{
                     ?>
                     <script>
